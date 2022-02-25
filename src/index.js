@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
-
+import Form from "./Form";
 import reportWebVitals from "./reportWebVitals";
 
 function App() {
-  return <div>hello</div>;
+  return (
+    <div className="container">
+      <div className="title">Hello</div>
+      <Form />
+    </div>
+  );
 }
 
 ReactDOM.render(
