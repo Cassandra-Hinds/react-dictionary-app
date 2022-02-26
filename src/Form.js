@@ -9,14 +9,16 @@ export default function Form() {
     setMessage(searchTerm);
 
     console.log(message);
-    if (message === null) {
-      return <div className="title">"Enter a Word"</div>;
-    } else {
-      return message;
-    }
   }
   function UpdateSearchTerm(event) {
     SetSearchTerm(event.target.value);
+  }
+  function show() {
+    if (message === null) {
+      return <div className="title">"Enter a Word"</div>;
+    } else {
+      return <div className="title">{message}</div>;
+    }
   }
   return (
     <div>
@@ -24,7 +26,7 @@ export default function Form() {
         <input type="text" placeholder="search" onChange={UpdateSearchTerm} />
         <input type="submit" value="submit" />
       </form>
-      <div className="title">{message}</div>
+      <div className="title">{show()}</div>
     </div>
   );
 }
