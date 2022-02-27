@@ -4,7 +4,13 @@ import Meaning from "./Meaning";
 export default function Results(props) {
   console.log(props.results);
 
-  if (props.results) {
+  if (
+    props.results === null ||
+    props.results === undefined ||
+    props.results === ""
+  ) {
+    return null;
+  } else {
     return (
       <div>
         <div>
@@ -19,7 +25,5 @@ export default function Results(props) {
         </div>
       </div>
     );
-  } else {
-    return null;
   }
 }
