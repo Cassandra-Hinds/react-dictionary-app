@@ -20,6 +20,6 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return "enter";
+    return null;
   }
 }

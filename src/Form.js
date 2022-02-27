@@ -23,7 +23,7 @@ export default function Form() {
     SetSearchTerm(event.target.value);
   }
   function show() {
-    if (message === null) {
+    if (message === null || message === undefined || message === "") {
       return <div className="title">"Enter a Word"</div>;
     } else {
       return <div className="title">{message}</div>;
