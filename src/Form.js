@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import Results from "./Results";
 export default function Form() {
   const [searchTerm, SetSearchTerm] = useState(null);
   const [message, setMessage] = useState(null);
+  const [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data);
+    setResults(response.data[0]);
   }
   function Searching(event) {
     event.preventDefault();
@@ -33,7 +35,9 @@ export default function Form() {
         <input type="text" placeholder="search" onChange={UpdateSearchTerm} />
         <input type="submit" value="submit" />
       </form>
+
       <div className="title">{show()}</div>
+      <Results results={results} />
     </div>
   );
 }
