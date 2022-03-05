@@ -18,6 +18,11 @@ body {
 
   color: #fff;
 }
+.def,
+.example {
+  font-size: 20px;
+  text-align: left;
+}
 .def {
   color: #fff;
 }

@@ -26,7 +26,12 @@ export default function Form() {
     if (message === null || message === undefined || message === "") {
       return <div className="title">"Enter a Word"</div>;
     } else {
-      return <div className="title">{message}</div>;
+      return (
+        <div>
+          <div className="title">{message}</div>
+          <Results results={results} />
+        </div>
+      );
     }
   }
   return (
@@ -37,7 +42,6 @@ export default function Form() {
       </form>
 
       <div className="title">{show()}</div>
-      <Results results={results} />
     </div>
   );
 }
