@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+
 export default function Form() {
   const [searchTerm, SetSearchTerm] = useState(null);
   const [message, setMessage] = useState(null);
@@ -29,6 +30,7 @@ export default function Form() {
       return (
         <div>
           <div className="title">{message}</div>
+
           <Results results={results} />
         </div>
       );
