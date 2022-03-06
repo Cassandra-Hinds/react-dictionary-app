@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Phonetic(props) {
   return (
-    <div>
+    <div className="phonet-pronun">
       <div className="phonetic">{props.phonetic.text}</div>
       <a
         href={props.phonetic.audio}

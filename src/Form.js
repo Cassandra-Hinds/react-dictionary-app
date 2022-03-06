@@ -8,7 +8,6 @@ export default function Form() {
   const [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data);
     setResults(response.data[0]);
   }
   function Searching(event) {
@@ -17,8 +16,6 @@ export default function Form() {
     setMessage(searchTerm);
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`;
     axios.get(apiUrl).then(handleResponse);
-
-    console.log(message);
   }
   function UpdateSearchTerm(event) {
     SetSearchTerm(event.target.value);
