@@ -8,7 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 function App() {
   return (
     <div className="container">
-      <div className="title">Cassandra's Dictionary</div>
+      <div className="title m-5">Cassandra's Dictionary</div>
       <Form />
     </div>
   );

@@ -25,11 +25,11 @@ export default function Form() {
   }
   function show() {
     if (message === null || message === undefined || message === "") {
-      return <div className="title">"Enter a Word"</div>;
+      return <div className="sub-title">Enter a word...</div>;
     } else {
       return (
         <div>
-          <div className="title">{message}</div>
+          <div className="keyterm">{message}</div>
 
           <Results results={results} />
         </div>
@@ -39,8 +39,12 @@ export default function Form() {
   return (
     <div>
       <form onSubmit={Searching}>
-        <input type="text" placeholder="search" onChange={UpdateSearchTerm} />
-        <input type="submit" value="submit" />
+        <input
+          type="text"
+          placeholder="Search"
+          autoFocus="on"
+          onChange={UpdateSearchTerm}
+        />
       </form>
 
       <div className="title">{show()}</div>

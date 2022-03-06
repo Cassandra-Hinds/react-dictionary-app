@@ -12,25 +12,102 @@ body {
   );
 }
 .title {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
   margin-top: 100px;
 
-  color: #fff;
+  color: #f6c6ea;
+}
+
+input {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border: 5px solid #cab8ff;
+  border-radius: 30px;
+}
+input:hover {
+  border-color: #cab8ffde;
+}
+.sub-title {
+  font-size: 40px;
+  color: #cab8ff;
+}
+
+.keyterm {
+  font-size: 100px;
+  text-transform: capitalize;
+  color: #cab8ff;
+  color: #eec1ea;
+}
+
+.phonet-pronun {
+}
+
+.pronunciation,
+.phonetic {
+  font-size: 20px;
+  text-decoration: none;
+}
+.pronunciation {
+  text-decoration: none;
+  background-color: white;
+
+  color: #cab8ff;
+  color: #957dad;
+  color: #825fa5;
+  font-weight: bold;
+
+  padding: 20px 20px 20px 20px;
+  border-radius: 50px;
+  transition: all ease-in-out 200ms;
+}
+.pronunciation:hover {
+  background-color: #825fa5;
+  color: white;
+}
+.phonetic {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+section {
+  background-color: #825fa5;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 70px;
+  box-shadow: 2px 2px 20px #00000086;
+}
+section:hover {
+  background-color: #825fa5de;
+}
+
+.part-of-speech {
+  font-size: 80;
+  text-transform: capitalize;
+
+  color: #eec1ea;
+  color: #dbd3f7;
+  margin-top: 100px;
 }
 .def,
-.example {
+.example,
+.syn {
   font-size: 20px;
   text-align: left;
 }
+
 .def {
   color: #fff;
 }
 
 .example {
-  color: #fff89a;
+  color: aqua;
 }
 
 .syn {
-  color: aqua;
+  color: #eec1ea;
+  text-align: left;
+  text-transform: capitalize;
 }
