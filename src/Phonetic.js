@@ -7,6 +7,7 @@ export default function Phonetic(props) {
       <a
         href={props.phonetic.audio}
         target={"_blank"}
+        rel="noreferrer"
         className="pronunciation"
       >
         Pronunciation

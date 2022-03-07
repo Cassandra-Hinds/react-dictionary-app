@@ -42,9 +42,6 @@ input:hover {
   color: #eec1ea;
 }
 
-.phonet-pronun {
-}
-
 .pronunciation,
 .phonetic {
   font-size: 20px;
@@ -110,4 +107,18 @@ section:hover {
   color: #eec1ea;
   text-align: left;
   text-transform: capitalize;
+}
+
+.photos {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.credit {
+  margin-top: 80px;
+  color: #f6c6ea;
+}
+
+.credit a {
+  color: #cab8ff;
 }

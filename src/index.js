@@ -10,6 +10,25 @@ function App() {
     <div className="container">
       <div className="title m-5">Cassandra's Dictionary</div>
       <Form />
+      <div className="credit">
+        This project was coded by Cassandra L. Hinds and is open-sourced on{" "}
+        <a
+          href="https://github.com/Cassandra-Hinds/react-dictionary-app"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          {" "}
+          Github
+        </a>{" "}
+        and hosted on{" "}
+        <a
+          href="https://reverent-payne-4e4f01.netlify.app"
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
+      </div>
     </div>
   );
 }
